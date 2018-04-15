@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.LoginController">
+	<children>
+		<Pane layoutX="20.0" layoutY="20.0" prefHeight="260.0" prefWidth="360.0" style="-fx-background-color: #ffffff;">
+			<children>
+				<JFXTextField fx:id="tfUser" labelFloat="true" layoutX="55.0" layoutY="37.0" prefHeight="30.0" prefWidth="250.0" promptText="Username">
+					<font>
+						<Font size="13.0" />
+					</font>
+				</JFXTextField>
+				<JFXPasswordField fx:id="tfPassword" labelFloat="true" layoutX="55.0" layoutY="104.0" prefHeight="30.0" prefWidth="250.0" promptText="Password">
+					<font>
+						<Font size="13.0" />
+					</font>
+				</JFXPasswordField>
+				<JFXButton fx:id="btLogin" buttonType="RAISED" layoutX="41.0" layoutY="183.0" onAction="#doLogin" prefHeight="40.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #2196F3;" text="Login" textFill="WHITE">
+					<font>
+						<Font size="13.0" />
+					</font>
+				</JFXButton>
+				<JFXButton fx:id="btSignup" buttonType="RAISED" layoutX="220.0" layoutY="183.0" onAction="#doSignup" prefHeight="40.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #2196F3;" text="Sign up" textFill="WHITE">
+					<font>
+						<Font size="13.0" />
+					</font>
+				</JFXButton>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
