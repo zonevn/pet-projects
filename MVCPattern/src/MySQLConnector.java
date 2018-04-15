@@ -13,12 +13,13 @@ public class MySQLConnector {
 			return conn;
 		try {
 			Properties prop = new Properties();
-			InputStream inputStream = MySQLConnector.class.getClassLoader().getResourceAsStream("/db.properties");
+			InputStream inputStream = MySQLConnector.class.getClassLoader().getResourceAsStream("db.props");
 			prop.load(inputStream);
 			String driver = prop.getProperty("driver");
 			String url = prop.getProperty("url");
 			String user = prop.getProperty("user");
-			String password = prop.getProperty("passwword");
+			String password = prop.getProperty("password");
+
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url, user, password);
 		} catch (IOException | ClassNotFoundException | SQLException e) {
