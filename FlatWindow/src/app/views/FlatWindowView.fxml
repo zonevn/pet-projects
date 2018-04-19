@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.FlatWindowController">
+   <children>
+      <HBox fx:id="hbTitlebar" alignment="CENTER_RIGHT" onMouseDragged="#moveWindowFromTitlebar" onMousePressed="#grabWindowFromTitlebar" prefHeight="32.0" prefWidth="800.0" style="-fx-background-color: #303030;">
+         <children>
+            <ImageView fx:id="btClose" fitWidth="18.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/close_white_32x32.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
