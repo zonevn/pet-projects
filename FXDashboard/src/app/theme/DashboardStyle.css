@@ -1,0 +1,13 @@
+.close-btn{
+	-fx-opacity: 1;
+}
+.close-btn:hover{
+	-fx-opacity: 0.5;
+}
+.nav-btn{
+	-fx-background-color: transparent;
+	-fx-background-radius: 0;
+}
+.nav-btn:hover{
+	-fx-background-color: #4d4d4d;	
+}

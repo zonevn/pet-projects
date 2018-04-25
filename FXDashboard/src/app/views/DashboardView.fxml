@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="borderpane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.DashboardController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #4d4d4d;" text="NAVIGATION" textFill="#4d4d4d" />
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleHome" prefHeight="40.0" prefWidth="100.0" styleClass="nav-btn" textFill="#858585">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <Label prefWidth="100.0" text="Home" textFill="#878787">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleMessages" prefHeight="40.0" prefWidth="100.0" styleClass="nav-btn" textFill="#858585">
+               <graphic>
+                  <Label prefWidth="100.0" text="Messages" textFill="#878787">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleReports" prefHeight="40.0" prefWidth="100.0" styleClass="nav-btn" textFill="#858585">
+               <graphic>
+                  <Label prefWidth="100.0" text="Reports" textFill="#878787">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="40.0" prefWidth="100.0" styleClass="nav-btn" textFill="#858585">
+               <graphic>
+                  <Label prefWidth="100.0" text="Logout" textFill="#878787">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox fx:id="hbTitlebar" prefHeight="32.0" prefWidth="800.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="750.0">
+               <children>
+                  <Label text="FX DASHBOARD" textFill="#878787">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="50.0">
+               <children>
+                  <ImageView fx:id="btClose" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" styleClass="close-btn">
+                     <image>
+                        <Image url="@../../assets/images/close_white_32x32.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
